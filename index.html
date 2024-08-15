@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+
+    <!-- css -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid">
+    <table>
+        <th colspan="4"><button class="btn"><input type="text" id="result" placeholder="0" class="form-control"></button></th>
+        <tr>
+            <td><button class="b" id="seven" onclick="displayNumber(7)">7</button></td>
+            <td><button class="b" id="eight" onclick="displayNumber(8)">8</button></td>
+            <td><button class="b" id="nine" onclick="displayNumber(9)">9</button></td>
+            <td><button class="s" id="mul" onclick="displayNumber('*')">x</button></td>
+            
+        </tr>
+        <tr>
+            <td><button class="b" id="four" onclick="displayNumber(4)">4</button></td>
+            <td><button class="b" id="five" onclick="displayNumber(5)">5</button></td>
+            <td><button class="b" id="six" onclick="displayNumber(6)">6</button></td>
+            <td><button class="s" id="sub" onclick="displayNumber('-')">-</button></td>
+            
+        </tr>
+        <tr>
+            <td><button class="b" id="three" onclick="displayNumber(3)">3</button></td>
+            <td><button class="b" id="two" onclick="displayNumber(2)">2</button></td>
+            <td><button class="b" id="one" onclick="displayNumber(1)">1</button></td>
+            <td><button class="s" id="add" onclick="displayNumber('+')">+</button></td>
+            
+        </tr>
+        <tr>
+            <td><button class="b opt" id="doubleZero" onclick="displayNumber('00')">00</button></td>
+            <td><button class="b opt" id="singleZero" onclick="displayNumber(0)">0</button></td>
+            <td><button class="b opt" id="div" onclick="displayNumber('.')">.</button></td>
+            <td><button class="s opt" id="div" onclick="displayNumber('/')">&#247;</button></td>
+            
+        </tr>
+        <tr>
+            <td><button class="s ac" id="ac" onclick="clearBox()" >AC</button></td>
+            <td><button id="del" class="s" onclick="removeLastItem()">&#9003;</button></td>
+            <td colspan="2" class="opt1 text-center" id="equal" onclick="evaluateExp()"><button class="eq">&#61;</button></td>
+            
+        </tr>
+    </table>  
+</div>  
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,41 @@
+/* *{
+    background-color: purple;
+} */
+ th{
+    background-color: brown;
+ }
+table{
+    box-shadow: 3px 3px 3px 3px whitesmoke;
+    background-color: purple;
+}
+#result{
+    text-align: right;
+}
+.b{
+    background-color: black;
+    color: white;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+}
+.s{
+    background-color: black;
+    color: rgb(239, 103, 12);
+    margin: 0;
+    width: 60px;
+    height: 60px;
+}
+/* table td{
+    border: 2px rgb(0, 0, 0);
+} */
+
+.eq{
+    width: 120px;
+    height: 60px;
+    background-color: grey;
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
